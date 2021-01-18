@@ -34,12 +34,12 @@ time, mark, audio, video {
 html {
     margin: 0px;
     font-size: 62.5%;
-    min-width: 768px;
+    min-width: 864px;
 }
 
 header {
     width: 98vw;
-    min-width: 768px;
+    min-width: 864px;
     max-width: 1536px;
     height: auto;
 }
@@ -47,8 +47,8 @@ header {
 .banner {
     display: flex;
     background-color: lightyellow;
-    border-radius: 30px;
-    margin: 15px;
+    border-radius: 32px;
+    margin: 16px;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: baseline;
@@ -116,7 +116,7 @@ nav{
 
 .photoNCG {
     width: 46vw;
-    min-width: 384px;
+    min-width: 432px;
     margin-left: 10px;
 }
 
@@ -142,7 +142,7 @@ section.bodyContent {
 }
 
 .bodyText {
-    width: 384px;
+    width: 368px;
 }
 
 .boldText {
@@ -181,7 +181,7 @@ p.hThree {
     margin-top: 0;
     width: 49vw;
     max-width: 720px;
-    padding-right: 30px;
+    padding-right: 64px;
     justify-content: space-between;
     flex-wrap: wrap;
     overflow: hidden;
@@ -189,14 +189,13 @@ p.hThree {
 }
 
 .photo {
-    background:url(https://picsum.photos/150);
     height: 12.5vw;
     min-height: 96px;
     max-height: 200px;
     width: 12.5vw;
     min-width: 96px;
     max-width: 200px;
-    margin-top: 3vw;
+    margin-top: 32px;
     border: 1px solid black;
     box-sizing: border-box;
     justify-content: center;
@@ -208,7 +207,7 @@ p.hThree {
 
 footer {
     width: 98vw;
-    min-width: 768px;
+    min-width: 864px;
     max-width: 1536px;
     height: auto;
 }
@@ -216,8 +215,8 @@ footer {
 .footerBanner {
     display: flex;
     background-color: black;
-    border-radius: 30px;
-    margin: -3px 15px 0 15px;
+    border-radius: 32px;
+    margin: -3px 16px 0 16px;
     flex-flow: column wrap;
     
 }
@@ -231,31 +230,213 @@ footer {
     
 }
 
-@media (max-width: 768px){
-    header {
-        min-width: 480px;
+
+
+
+
+
+
+@media (max-width: 864px){
+    html {
+        min-width: 576px;
     }
+    
+    header {
+        min-width: 576px;
+        max-width: 864px;
+        height: auto;
+    }
+    
+    .banner {
+        display: flex;
+        background-color: lightyellow;
+        border-radius: 32px;
+        margin: 16px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: baseline;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .hOne {
+        font-size: 4.8rem;
+        font-weight: 700;
+        margin: 0;
+        text-shadow: 2px 2px lightgray;
+    }
+    
+    .hTwo {
+        font-size: 3.2rem;
+        font-style: italic;
+        font-weight: 700;
+        margin: 0;
+    }
+    
+    nav{
+        display: flex;
+        
+        justify-content: left;
+        align-items: center;
+        height: auto;
+        margin: 20px 80px;
+    }
+    
+        nav a {
+            width: 96px;
+            font-size: 1.6rem;
+            font-family: sans-serif;
+            font-weight: 700;
+            padding: 6px;
+            border: 1px solid black;
+            border-radius: 16px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            background: white;
+            transition: .3s;
+            
+        }
+        nav a:hover {
+            color: yellow;
+            background: black;
+            font-style: oblique;
+        }
+    
+        nav a.currentPage {
+            width: 106px;
+            border: 6px solid blue;
+            border-radius: 21px;
+    
+        }
+    
+    
+    
     .bodyContainer {
-        display: inline-block;
-        justify-content: center;
-        margin: auto;
+        display: flex;
+        justify-content: flex-start;
     }
     
     .photoNCG {
-        width: 60vw;
-        min-width: 336px;
-        max-width: 384px;
+        width: 46vw;
+        min-width: 384px;
         margin-left: 10px;
     }
     
     .photoNCG img {
         width: 100%;
+    }
+    
+    section.bodyContent {
+        align-content: flex-start;
+    }
+    
+    .bodyContent {
+        width: 48vw;
+        min-width: 320px;
+        padding-left: 1vw;
+        display: flex;
+        flex-flow: wrap;
+    }
+    
+    .bodyContent p {
+        font-size: 1.5rem;
+        padding-right: 2vw;
+    }
+    
+    .bodyText {
+        width: 384px;
+    }
+    
+    .boldText {
+        font-weight: 600;
+        color: blue;
+    }
+    
+    .button {
+        font-size: 1.6rem;
+        font-family: sans-serif;
+        font-weight: 700;
+        padding: 6px;
+        border: 1px solid black;
+        border-radius: 16px;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        background: lightyellow;
+        transition: .3s;
+    }
+    
+    .button:hover {
+        color: yellow;
+        background: blue;
+        font-style: oblique;
+    }
+    
+    p.hThree {
+        font-size: 3rem;
+        font-weight: 600;
+        flex-wrap: wrap;
+    }
+    
+    .bodyPhotos {
+        display:flex;
+        margin-top: 0;
+        width: 49vw;
+        max-width: 720px;
+        margin-right: 0px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        overflow: hidden;
+        
+    }
+    
+    .photo {
+        background:url(https://picsum.photos/150);
+        height: 15vw;
+        min-height: 96px;
+        max-height: 200px;
+        width: 15vw;
+        min-width: 96px;
+        max-width: 200px;
+        margin-top: 3vw;
+        border: 1px solid black;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    
+    
+    footer {
+        min-width: 576px;
+        max-width: 864px;
+        height: auto;
+    }
+    
+    /* .footerBanner {
+        display: flex;
+        background-color: black;
+        border-radius: 32px;
+        margin: 24px 16px 0 16px;
+        flex-flow: column wrap;
+    }
+    
+    .footerText {
+        text-align: center;
+        color: lightyellow;
+        font-size: 2.4rem;
+        line-height: 200%;
+        padding: 16px 0 24px 0;
+        
+    } */
     
 }
 
 
 
-@media (max-width: 480px){
+@media (max-width: 576px){
 
 
 }
