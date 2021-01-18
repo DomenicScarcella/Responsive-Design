@@ -37,7 +37,7 @@ html {
 header {
     width: 98vw;
     min-width: 864px;
-    max-width: 1536px;
+    max-width: 1440px;
     height: auto;
 }
 
@@ -49,8 +49,12 @@ header {
         justify-content: space-evenly;
         flex-wrap: wrap;
         align-items: baseline;
-        padding-left: 40px;
-        padding-right: 40px;
+    }
+    .bannerName {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: baseline;
     }
 
     .hOne {
@@ -69,16 +73,23 @@ header {
         margin: 0 20px;
     }
 
+    .bannerNav {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+
     nav{
         display: flex;
         justify-content: left;
         align-items: center;
         height: auto;
-        margin: 20px 80px;
+        margin: 20px 48px;
     }
 
     nav a {
-        width: 80px;
+        width: 64px;
         font-size: 1.6rem;
         font-family: sans-serif;
         font-weight: 700;
@@ -99,7 +110,7 @@ header {
     }
 
     nav a.currentPage {
-        width: 90px;
+        width: 72px;
         border: 6px solid blue;
         border-radius: 21px;
     }
@@ -107,12 +118,12 @@ header {
 body.homePage {
     height: 100%;
     width: 98vw;
-    max-width: 1536px;
+    max-width: 1440px;
 }
 
     .bodyContainer {
         display: inline-flex;
-        margin-left: 53.5%;
+        margin-left: 51.5%;
     }
 
     .bodyText {
@@ -121,16 +132,16 @@ body.homePage {
         flex-flow: wrap;
     }
 
-    .bodyText p {
-        font-family: serif;
-        font-size: 1.5rem;
-    }
-
-    .hThree {
+    h3 {
         font-family: sans-serif;
-        font-size: 3rem;
+        font-size: 3.2rem;
         font-weight: 600;
         flex-wrap: wrap;
+    }
+    
+    .bodyText p {
+        font-family: serif;
+        font-size: 1.6rem;
     }
 
     .boldText {
@@ -140,7 +151,7 @@ body.homePage {
 
     .portfolio {
         width: 98vw;
-        max-width: 1536px;
+        max-width: 1440px;
         margin: -240px 0 0 0x;
         display: inline-flex;
     }
@@ -192,17 +203,17 @@ body.homePage {
         justify-content: space-between;
         flex-wrap: wrap;
         height: auto;
-        padding: 0 3vw 0 0;
+        padding: 0 6% 8px 0;
         object-fit: contain;
         overflow: hidden;
     }
 
     .photo {
-        height: 12.5vw;
-        min-height: 96px;
+        height: 13.33vw;
+        min-height: 88px;
         max-height: 200px;
-        width: 12.5vw;
-        min-width: 96px;
+        width: 13.33vw;
+        min-width: 88px;
         max-width: 200px;
         margin-top: 24px;
         border: 1px solid black;
@@ -214,7 +225,7 @@ body.homePage {
 footer {
     width: 98vw;
     min-width: 864px;
-    max-width: 1536px;
+    max-width: 1440px;
     height: auto;
 }
 
@@ -230,7 +241,7 @@ footer {
         text-align: center;
         color: lightyellow;
         font-size: 2.4rem;
-        line-height: 200%;
+        line-height: 150%;
         padding: 8px 0 16px 0;
     }
 
@@ -241,26 +252,14 @@ footer {
 
 @media (max-width: 863px){
     html {
-        min-width: 576px;
+        min-width: 512px;
     }
 
     header {
         width: 98vw;
-        min-width: 560px;
+        min-width: 480px;
         max-width: 863px;
     }
-    
-        .banner {
-            display: flex;
-            background-color: lightyellow;
-            border-radius: 32px;
-            margin: 16px;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            align-items: baseline;
-            padding-left: 40px;
-            padding-right: 40px;
-        }
     
         .hOne {
             font-family: serif;
@@ -278,45 +277,10 @@ footer {
             margin: 0;
         }
     
-        nav{
-            display: flex;
-            justify-content: left;
-            align-items: center;
-            height: auto;
-            margin: 20px 80px;
-        }
-    
-        nav a {
-            width: 80px;
-            font-size: 1.6rem;
-            font-family: sans-serif;
-            font-weight: 700;
-            padding: 6px;
-            border: 1px solid black;
-            border-radius: 16px;
-            text-align: center;
-            text-decoration: none;
-            color: black;
-            background: white;
-            transition: .3s;
-        }
-    
-        nav a:hover {
-            color: yellow;
-            background: black;
-            font-style: oblique;
-        }
-    
-        nav a.currentPage {
-            width: 90px;
-            border: 6px solid blue;
-            border-radius: 21px;
-        }
-    
     body.homePage {
         height: 100%;
         width: 98vw;
-        max-width: 1536px;
+        max-width: 863px;
     }
     
         .bodyContainer {
@@ -330,13 +294,14 @@ footer {
             flex-flow: wrap;
         }
     
-        .bodyText p {
+        h3 {
+            font-size: 2.4rem;
+            font-weight: 600;
             text-align: center;
         }
-    
-        .hThree {
-            font-size: 2.5rem;
-            font-weight: 600;
+        
+        .bodyText p {
+            text-align: center;
         }
     
         .portfolio {
@@ -346,16 +311,16 @@ footer {
         }
     
         .photoNCG {
-            width: 55vw;
-            padding: 0 2vw 0 6vw;
-            min-width: 288px;
+            width: 57.5vw;
+            padding: 0 2vw 0 4vw;
+            min-width: 304px;
             max-width: 636px;
-            margin: -440px 0 0 0;
+            margin: -432px 0 0 0;
         }
     
         .myProject {
-            width: 82vw;
-            margin: -2px 10vw 0 8vw;
+            width: 86vw;
+            margin: -2px 8vw 0 6vw;
             padding-top: 24px;
             display: flex;
             flex-direction: column;
@@ -390,12 +355,13 @@ footer {
     
     footer {
         width: 98vw;
-        min-width: 560px;
+        min-width: 480px;
         max-width: 863px;
     }
     
         .footerBanner {
             margin: 16px;
+            padding: 4px 0 12px;
             flex-flow: column wrap;
         }
     
@@ -406,125 +372,116 @@ footer {
 
 
 
-@media (max-width: 576px){
+@media (max-width: 512px){
+
     html {
-        min-width: 344px;
-        max-width: 575px;
-        background-color: purple;
+        min-width: 360px;
+        max-width: 511px;
     }
 
     header {
-        width: 98vw;
-        min-width: 344px;
-        max-width: 575px;
+        width: 92vw;
+        min-width: 328px;
+        max-width: 527px;
     }
     
         .banner {
+            width: 92vw;
+            min-width: 328px;
             display: flex;
             background-color: lightyellow;
             border-radius: 32px;
-            margin: 16px;
             justify-content: space-evenly;
-            flex-wrap: wrap;
-            align-items: baseline;
-            padding-left: 40px;
-            padding-right: 40px;
+            flex-direction: row-reverse;
+            align-items: center;
         }
-    
+
+        .bannerName {
+            width: 55vw;
+            min-width: 198px;
+        }
+
         .hOne {
             font-family: serif;
-            font-size: 5.6rem;
+            font-size: 4.8rem;
             font-weight: 700;
-            margin: 0;
+            line-height: 87.5%;
+            margin: 16px 0 0 0;
             text-shadow: -2px 2px white;
         }
     
         .hTwo {
             font-family: serif;
-            font-size: 2.8rem;
+            font-size: 2.4rem;
             font-style: italic;
             font-weight: 700;
-            margin: 0;
+            margin: 8px 2vw 16px 0;
+        }
+
+        .bannerNav {
+            width: 30vw;
+            min-width: 108px;
         }
     
         nav{
             display: flex;
-            justify-content: left;
-            align-items: center;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: left;
             height: auto;
-            margin: 20px 80px;
-        }
-    
-        nav a {
-            width: 80px;
-            font-size: 1.6rem;
-            font-family: sans-serif;
-            font-weight: 700;
-            padding: 6px;
-            border: 1px solid black;
-            border-radius: 16px;
-            text-align: center;
-            text-decoration: none;
-            color: black;
-            background: white;
-            transition: .3s;
-        }
-    
-        nav a:hover {
-            color: yellow;
-            background: black;
-            font-style: oblique;
-        }
-    
-        nav a.currentPage {
-            width: 90px;
-            border: 6px solid blue;
-            border-radius: 21px;
+            margin: 12px 20px;
         }
     
     body.homePage {
         height: 100%;
         width: 98vw;
-        max-width: 1536px;
+        min-width: 328px;
+        max-width: 527px;
     }
-    
         .bodyContainer {
+            width: 98vw;
+            min-width: 328px;
+            max-width: 480px;
             display: inline-flex;
-            margin-left: 62.5%;
+            margin: 0;
         }
-    
+
         .bodyText {
-            width: 160px;
+            width: 92vw;
+            min-width: 296px;
+            max-width: 480px;
+            margin: 0 32px 0;
             display: flex;
             flex-flow: wrap;
         }
-    
-        .bodyText p {
+
+        h3 {
+            margin: 0;
+            font-size: 2.4rem;
+            font-weight: 600;
             text-align: center;
         }
-    
-        .hThree {
-            font-size: 2.5rem;
-            font-weight: 600;
-        }
-    
+
         .portfolio {
             width: 98vw;
+            min-width: 328px;
             max-width: 863px;
             display: block;
         }
     
         .photoNCG {
-            width: 55vw;
-            padding: 0 2vw 0 6vw;
-            min-width: 288px;
-            max-width: 636px;
-            margin: -440px 0 0 0;
+            width: 92vw;
+            padding: 0 2vw 0 4vw;
+            min-width: 328px;
+            max-width: 480px;
+            margin: -32px 0 0 0;
         }
     
         .myProject {
-            width: 82vw;
-            margin: -2px 10vw 0 8vw;
+            width: 88vw;
+            min-width: 328px;
+            max-width: 480px;
+            margin: -2px 2vw 0 6vw;
             padding-top: 24px;
             display: flex;
             flex-direction: column;
@@ -558,15 +515,33 @@ footer {
         }
     
     footer {
-        width: 98vw;
-        min-width: 560px;
-        max-width: 863px;
+        width: 92vw;
+        min-width: 328px;
+        max-width: 527px;
     }
     
-        .footerBanner {
-            margin: 16px;
-            flex-flow: column wrap;
-        }
+    .footerBanner {
+        width: 92vw;
+        min-width: 328px;
+        display: flex;
+        background-color: black;
+        border-radius: 32px;
+        margin: 16px;
+    }
 
+    .footerText {
+        text-align: center;
+        color: lightyellow;
+        font-size: 2.4rem;
+        line-height: 200%;
+        padding: 4px 12px 16px;
+    }
+
+    .footerText a.button {
+        display: inline-block;
+        line-height: 100%;
+        margin: 0 32px;
+        
+    }
 
 }
